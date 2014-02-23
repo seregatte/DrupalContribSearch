@@ -1,3 +1,14 @@
 [
-    { "command": "drupal_contrib_search" }
+    { "caption" : "DrupalContribSearch",
+      "command": "drupal_contrib_search",
+      "children": 
+    	[
+    		{"caption" : "Drupal 8" , "command": "drupal_contrib_search", "args": { "drupal_version": "8" } },
+    		{"caption" : "Drupal 7" , "command": "drupal_contrib_search", "args": { "drupal_version": "7" } },
+    		{"caption" : "Drupal 6" , "command": "drupal_contrib_search", "args": { "drupal_version": "6" } },
+    		{"caption" : "Drupal 5" , "command": "drupal_contrib_search", "args": { "drupal_version": "5" } },
+    		{"caption" : "Drupal 4.7" , "command": "drupal_contrib_search", "args": { "drupal_version": "4.7" } },
+    		{"caption" : "Drupal 4.6" , "command": "drupal_contrib_search", "args": { "drupal_version": "4.6" } },
+    	]
+	}
 ]

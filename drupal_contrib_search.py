@@ -3,13 +3,13 @@ import sublime, sublime_plugin
 
 class DrupalContribSearchCommand(sublime_plugin.TextCommand):
 
-    def run(self, edit):
+    def run(self, edit, drupal_version=None):
 
         selection = ""
         for region in self.view.sel():
             selection += self.view.substr(region)
 
-        webbrowser.open("http://drupalcontrib.org/api/search/7/%s" % selection)
+        webbrowser.open("http://drupalcontrib.org/api/search/%s/%s" % (drupal_version, selection))
 
     def is_visible(self):
 
