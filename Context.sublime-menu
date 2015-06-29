@@ -1,6 +1,5 @@
 [
     { "caption" : "DrupalContribSearch",
-      "command": "drupal_contrib_search",
       "children": 
     	[
     		{"caption" : "Drupal 8" , "command": "drupal_contrib_search", "args": { "drupal_version": "8" } },
